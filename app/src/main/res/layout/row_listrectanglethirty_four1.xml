@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearContentMarket"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <View
+            android:background="@drawable/rectangle_bg_gray_100_radius_8"
+            android:id="@+id/viewRectangleThirtyFour"
+            android:layout_height="@dimen/_110pxh" android:layout_width="@dimen/_110pxh"/>
+        <TextView android:id="@+id/txtItem1NameGoFour"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="match_parent"
+            android:text="@string/msg_item_1_name_go"
+            style="@style/txtInterregular14_2" tools:text="@string/msg_item_1_name_go"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtPriceFour"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true" android:text="@string/lbl_19_99"
+            style="@style/txtIntersemibold14" tools:text="@string/lbl_19_99"/>
+    </LinearLayout>
+</layout>

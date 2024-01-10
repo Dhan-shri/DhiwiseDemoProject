@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="start" android:id="@+id/linearColumn"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearColumntelevision"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegreen_400">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearIOSStatusBar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageTelevision"
+                        android:layout_height="@dimen/_11pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="@dimen/_28pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_television"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_television"/>
+                    <FrameLayout android:id="@+id/frameStacknotch"
+                        android:layout_height="@dimen/_28pxv"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_16pxh" android:layout_width="@dimen/_282pxh">
+                        <ImageView android:id="@+id/imageNotch"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_28pxh"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="@dimen/_219pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_notch"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_notch"/>
+                        <ImageView android:id="@+id/imageSettings"
+                            android:layout_gravity="bottom|end"
+                            android:layout_height="@dimen/_11pxh"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="@dimen/_66pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_settings_white_a700"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_settings_white_a700"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearPageHeader"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_135pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_31pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtBack"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_weight="0.27"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@string/lbl_back"
+                    style="@style/txtIntermedium16_4" tools:text="@string/lbl_back"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMarket"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_84pxh"
+                    android:layout_weight="0.73"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@string/lbl_market"
+                    style="@style/txtIntersemibold30_1" tools:text="@string/lbl_market"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearVideoCard"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_32pxv"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_marginTop="@dimen/_31pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_3">
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_green_600_19_border_green_600_radius_37"
+                    android:id="@+id/btnTriangle"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_74pxh"
+                    android:layout_marginBottom="@dimen/_63pxv"
+                    android:layout_marginEnd="@dimen/_134pxh"
+                    android:layout_marginStart="@dimen/_135pxh"
+                    android:layout_marginTop="@dimen/_63pxv"
+                    android:layout_width="@dimen/_74pxh"
+                    android:paddingHorizontal="@dimen/_21pxh"
+                    android:paddingVertical="@dimen/_21pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_triangle" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearCalendarOne"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnhotdeals"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtHotdeals"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/lbl_hot_deals"
+                    style="@style/txtIntermedium24" tools:text="@string/lbl_hot_deals"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerListrectanglethirty"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_16pxh}" tools:itemCount="4" tools:listitem="@layout/row_listrectanglethirty"/>
+            </LinearLayout>
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameStacktrending"
+                android:layout_height="@dimen/_220pxv"
+                android:layout_marginTop="@dimen/_33pxv" android:layout_width="match_parent">
+                <LinearLayout android:id="@+id/linearColumntrending"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTrending"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/lbl_trending"
+                        style="@style/txtIntermedium24" tools:text="@string/lbl_trending"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerListrectanglethirtyFour"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_13pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        itemSpace="@{@dimen/_16pxh}" tools:itemCount="4" tools:listitem="@layout/row_listrectanglethirty_four1"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearIOSBottomBar"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_55pxv"
+                    android:layout_marginTop="@dimen/_55pxv"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <View android:background="@color/bluegray_200"
+                        android:id="@+id/lineTopDivider"
+                        android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_375pxh"/>
+                    <FrameLayout android:id="@+id/frameStackbackground"
+                        android:layout_height="@dimen/_83pxv" android:layout_width="match_parent">
+                        <View android:background="@color/gray_50"
+                            android:id="@+id/viewBackground"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_83pxv" android:layout_width="@dimen/_375pxh"/>
+                        <ImageView android:id="@+id/imageTabs"
+                            android:layout_gravity="top|center"
+                            android:layout_height="@dimen/_32pxh"
+                            android:layout_marginBottom="@dimen/_14pxv"
+                            android:layout_marginEnd="@dimen/_26pxh"
+                            android:layout_marginStart="@dimen/_26pxh"
+                            android:layout_marginTop="@dimen/_14pxv"
+                            android:layout_width="@dimen/_320pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_tabs"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_tabs"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

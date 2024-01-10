@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearBottomDrawer"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_4">
+        <View
+            android:background="@drawable/rectangle_bg_gray_201_radius_2"
+            android:id="@+id/viewHandle"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_4pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_16pxv" android:layout_width="@dimen/_32pxh"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtDrawerHeader"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@string/lbl_drawer_header"
+            style="@style/txtIntermedium24" tools:text="@string/lbl_drawer_header"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtConsequatvelit"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="match_parent"
+            android:text="@string/msg_consequat_velit4"
+            style="@style/txtIntermedium16_2" tools:text="@string/msg_consequat_velit4"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearActions"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnClickMe"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_click_me"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_click_me"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSecondaryActio"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_94pxh"
+                android:layout_marginStart="@dimen/_94pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/msg_secondary_actio"
+                style="@style/txtIntersemibold16" tools:text="@string/msg_secondary_actio"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

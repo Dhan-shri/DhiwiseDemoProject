@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearBarLine"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <FrameLayout android:id="@+id/frameStackbackground"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_166pxv"
+            android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_16pxh">
+            <View
+                android:background="@drawable/rectangle_bg_gray_202_radius_8"
+                android:id="@+id/viewBackground"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_159pxh"
+                android:layout_marginBottom="@dimen/_10pxv" android:layout_width="@dimen/_16pxh"/>
+            <View
+                android:background="@drawable/rectangle_bg_green_400_radius_8"
+                android:id="@+id/viewBackgroundOne"
+                android:layout_gravity="bottom|start"
+                android:layout_height="@dimen/_117pxh"
+                android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_16pxh"/>
+        </FrameLayout>
+        <TextView android:ellipsize="end" android:gravity="end"
+            android:id="@+id/txtItem"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_1pxh"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true" android:text="@string/lbl_item"
+            style="@style/txtInterregular10" tools:text="@string/lbl_item"/>
+    </LinearLayout>
+</layout>
